@@ -73,4 +73,428 @@
         nav ul {
             display: flex;
             flex-wrap: wrap;
-            gap:
+            gap: 25px;
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            color: #384152;
+            font-size: 17px;
+        }
+
+        /* ---------- Main layout ---------- */
+
+        main {
+            padding-top: 55px;
+            padding-bottom: 70px;
+        }
+
+        section {
+            margin-bottom: 70px;
+            scroll-margin-top: 30px;
+        }
+
+        section h2 {
+            margin: 0 0 26px;
+            padding-bottom: 12px;
+
+            border-bottom: 2px solid #e1e4e8;
+
+            color: #202938;
+            font-size: 42px;
+            line-height: 1.2;
+        }
+
+        /* ---------- Introduction ---------- */
+
+        .intro {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            align-items: start;
+            gap: 45px;
+        }
+
+        .profile-photo {
+            width: 220px;
+            height: 220px;
+
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .intro-text h1 {
+            margin: -8px 0 8px;
+
+            color: #202938;
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            margin: 0 0 24px;
+
+            color: #687080;
+            font-size: 23px;
+            line-height: 1.45;
+        }
+
+        .intro-text p {
+            margin: 0 0 18px;
+        }
+
+        .profile-links {
+            margin-top: 24px;
+        }
+
+        .profile-links a {
+            display: inline-block;
+            margin-right: 18px;
+            font-weight: bold;
+        }
+
+        /* ---------- Research ---------- */
+
+        .research-item {
+            margin-bottom: 28px;
+        }
+
+        .research-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .research-item h3 {
+            margin: 0 0 7px;
+
+            color: #202938;
+            font-size: 26px;
+        }
+
+        .research-item p {
+            margin: 0;
+        }
+
+        /* ---------- Papers ---------- */
+
+        .paper {
+            margin-bottom: 35px;
+        }
+
+        .paper:last-child {
+            margin-bottom: 0;
+        }
+
+        .paper-title {
+            margin: 0 0 5px;
+
+            color: #202938;
+            font-size: 27px;
+            font-weight: bold;
+            line-height: 1.35;
+        }
+
+        .paper-authors {
+            margin: 0 0 3px;
+
+            color: #687080;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .paper-information {
+            margin: 0;
+            color: #687080;
+            font-size: 22px;
+        }
+
+        /* ---------- Teaching ---------- */
+
+        .teaching-list {
+            margin: 0;
+            padding-left: 38px;
+        }
+
+        .teaching-list li {
+            margin-bottom: 5px;
+            padding-left: 2px;
+            font-size: 23px;
+        }
+
+        /* ---------- Contact ---------- */
+
+        .contact-information p {
+            margin: 0 0 12px;
+        }
+
+        /* ---------- Footer ---------- */
+
+        footer {
+            border-top: 1px solid #dfe3e8;
+            padding: 25px 20px;
+
+            color: #687080;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        /* ---------- Mobile layout ---------- */
+
+        @media (max-width: 760px) {
+            body {
+                font-size: 17px;
+            }
+
+            .page-container,
+            .nav-container {
+                width: min(100% - 34px, 1100px);
+            }
+
+            .nav-container {
+                padding: 16px 0;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 12px 18px;
+            }
+
+            main {
+                padding-top: 35px;
+            }
+
+            section {
+                margin-bottom: 52px;
+            }
+
+            section h2 {
+                font-size: 34px;
+            }
+
+            .intro {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .profile-photo {
+                width: 180px;
+                height: 180px;
+            }
+
+            .intro-text h1 {
+                margin-top: 0;
+                font-size: 38px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .paper-title {
+                font-size: 22px;
+            }
+
+            .paper-authors,
+            .paper-information,
+            .teaching-list li {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-name">
+                Zhifan (Oliver) Jing
+            </div>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#papers">Papers</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container">
+
+        <!-- About -->
+        <section id="about">
+            <div class="intro">
+
+                <img
+                    src="profile.jpg"
+                    alt="Photograph of Zhifan Oliver Jing"
+                    class="profile-photo"
+                >
+
+                <div class="intro-text">
+                    <h1>Zhifan (Oliver) Jing</h1>
+
+                    <p class="subtitle">
+                        Ph.D. Student in Computer Sciences<br>
+                        University of Wisconsin–Madison
+                    </p>
+
+                    <p>
+                        I am a Ph.D. student in Computer Sciences at the
+                        University of Wisconsin–Madison.
+                    </p>
+
+                    <p>
+                        I am interested in theoretical computer science,
+                        machine learning theory, distribution testing, and
+                        high-dimensional probability.
+                    </p>
+
+                    <p>
+                        My current research focuses on improving the sample
+                        complexity of distribution testing when samples are
+                        independent but not identically distributed.
+                    </p>
+
+                    <div class="profile-links">
+                        <a href="cv.pdf" target="_blank">
+                            CV
+                        </a>
+
+                        <a
+                            href="https://github.com/zjing24"
+                            target="_blank"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research">
+            <h2>Research</h2>
+
+            <div class="research-item">
+                <h3>Distribution Testing</h3>
+
+                <p>
+                    I study closeness testing and related distribution-testing
+                    problems under independent but non-identically distributed
+                    sampling models.
+                </p>
+            </div>
+
+            <div class="research-item">
+                <h3>Machine Learning Theory</h3>
+
+                <p>
+                    My interests include learning theory, high-dimensional
+                    probability, and the theoretical foundations of machine
+                    learning.
+                </p>
+            </div>
+        </section>
+
+        <!-- Papers -->
+        <section id="papers">
+            <h2>Papers</h2>
+
+            <!--
+            Copy this entire paper block when you add a new paper.
+            -->
+
+            <article class="paper">
+                <p class="paper-title">
+                    Paper Title
+                </p>
+
+                <p class="paper-authors">
+                    Zhifan Jing, Coauthor Name
+                </p>
+
+                <p class="paper-information">
+                    Preprint.
+                    <a
+                        href="https://arxiv.org/"
+                        target="_blank"
+                    >
+                        arXiv
+                    </a>
+                </p>
+            </article>
+
+            <!--
+            Example for another paper:
+
+            <article class="paper">
+                <p class="paper-title">
+                    Another Paper Title
+                </p>
+
+                <p class="paper-authors">
+                    Zhifan Jing, First Coauthor, Second Coauthor
+                </p>
+
+                <p class="paper-information">
+                    Conference Name, 2026.
+                    <a href="paper.pdf" target="_blank">Paper</a>
+                    ·
+                    <a href="https://arxiv.org/" target="_blank">arXiv</a>
+                    ·
+                    <a href="https://github.com/" target="_blank">Code</a>
+                </p>
+            </article>
+            -->
+        </section>
+
+        <!-- Teaching -->
+        <section id="teaching">
+            <h2>Teaching</h2>
+
+            <ul class="teaching-list">
+                <li>
+                    Grader, Math 541 Modern Algebra I — Fall 2024
+                </li>
+
+                <li>
+                    Proctor, University of Wisconsin–Madison —
+                    2024–2025
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <div class="contact-information">
+                <p>
+                    Email:
+                    <span>zjing24 at wisc.edu</span>
+                </p>
+
+                <p>
+                    Department of Computer Sciences<br>
+                    University of Wisconsin–Madison<br>
+                    Madison, Wisconsin
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Zhifan (Oliver) Jing. Hosted with GitHub Pages.
+    </footer>
+
+</body>
+</html>
